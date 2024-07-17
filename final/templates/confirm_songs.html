@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Confirm
+{% endblock %}
+
+{% block main %}
+    <h1>Please Confirm Song Choices</h1>
+
+    <h2>Artist: <b>{{ artist }}</b></h2>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th class="text-start">Song</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for song in songs %}
+                <tr>
+                    <td class="text-start">{{ song }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <form action="/confirm" method="post">
+        <button class="btn btn-primary" type="submit">Confirm Choices</button>
+    </form>
+
+{% endblock %}

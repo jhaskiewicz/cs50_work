@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Spotify Songs
+{% endblock %}
+
+{% block main %}
+    <h1>Add Top Songs from an Artist via Spotify</h1>
+
+    <form action="/spotify" method="post">
+        <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="artist" name="artist" placeholder="Artist" type="text">
+        </div>
+        <button class="btn btn-primary" type="submit">Search Artist</button>
+    </form>
+
+{% endblock %}

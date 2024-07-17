@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th class="text-start">Song</th>
+                <th class="text-start">Probability</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for song in songs %}
+                <tr>
+                    <td class="text-start">{{ song.song }}</td>
+                    <td class="text-start">{{ song.probability }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <form action="/reset" method="post">
+        <button style="float: right;" class="btn btn-primary" type="submit">Reset Probability</button>
+    </form>
+    <form action="/dump" method="post">
+        <button style="float: left;" class="btn btn-primary" type="submit">Dump Playlist</button>
+    </form>
+{% endblock %}

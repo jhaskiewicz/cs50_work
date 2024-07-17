@@ -1,0 +1,13 @@
+sort1 uses: Bubble sort
+
+How do you know?: It took about the same time as sort 3 on a random text file
+,but it took no time at all for a sorted file.
+
+sort2 uses: Merge sort
+
+How do you know?: It was fastest on the random file and did about the same on the sorted file
+
+sort3 uses: Selection Sort
+
+How do you know?: it took the same time as sort3 on random, but much longer on the sorted files,
+since it is still going through all of the elements

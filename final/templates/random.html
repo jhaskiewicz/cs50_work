@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Shuffle
+{% endblock %}
+
+{% block main %}
+
+    <h1>Shuffle</h1>
+
+    <form action="/random" method="post">
+        <button class="btn btn-primary" type="submit">Shuffle</button>
+    </form>
+    <br>
+
+    {% if song != "NA" %}
+    <h2>{{ song }}</h2>
+    {% endif %}
+
+
+{% endblock %}

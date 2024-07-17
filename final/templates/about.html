@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    About
+{% endblock %}
+
+{% block main %}
+
+    <h1>The Continually Distributed Discreate Distribution Shuffler:</h1>
+    <h3>Or The CDDD Shuffler for short</h3>
+    <br><br><br>
+    <h3>This Site allows users to add songs to thier own playlist, by eithier entering the song name, or entering an artists name and the site will add their top 10 tracks!
+         The site then allows users to suffle through their playlist. The shuffle starts off by using a basic uniform discreate distribution, however after a song is chosen, it divides the
+        probability of the chosen song across all other songs, then sets the chosen song probability to zero. This makes songs that have not been chosen in a while to statistically be more likley to
+        be chosen.
+        <p> This kind of randomizer is not possible without computers, as given a playlist of n songs, it will have n+1 computations.</h3></p>
+
+
+{% endblock %}

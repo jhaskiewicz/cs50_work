@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Add Song
+{% endblock %}
+
+{% block main %}
+    <form action="/add song" method="post">
+        <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="song" name="song" placeholder="Song" type="text">
+        </div>
+        <button class="btn btn-primary" type="submit">Add song</button>
+    </form>
+{% endblock %}
